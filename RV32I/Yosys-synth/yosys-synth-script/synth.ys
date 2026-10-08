@@ -1,0 +1,15 @@
+read_verilog rv32i_alu.v
+read_verilog rv32i_reg_files.v
+read_verilog rv32i_immediate_gen.v
+read_verilog rv32i_core.v
+
+hierarchy -top rv32i_core
+
+proc
+opt
+memory
+opt
+techmap
+opt
+
+show rv32i_core
